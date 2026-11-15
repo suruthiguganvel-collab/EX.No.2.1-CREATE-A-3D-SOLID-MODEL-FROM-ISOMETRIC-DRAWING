@@ -12,74 +12,72 @@ Through this process, designers learn how to sketch 2D profiles based on structu
 3.16 GB of RAM: High-performance memory capacity required to handle complex 3D graphics and rendering operations (integrated graphics with 1 GB VRAM or more is strongly recommended).
 34.Internet Connection: A stable broadband connection with a download speed of 2.5 Mbps or faster, and an upload speed of 500 Kbps or faster to support cloud saving and workspace syncing.
 
-## PROCEDURE
+## REQUIREMENTS/TOOLS NEEDED
+* *Drawing Board & Drafter / Mini-Drafter* (or T-square and set squares: 30°-60° and 45°)
+* *Drawing Paper* (A2 or A4 size sheet as required)
+* *Pencils:*
+  * *2H or H pencil* for construction lines, dimensioning, and projection lines.
+  * *HB or B pencil* for final visible outlines and lettering.
+* *Erasing Shield and Eraser*
+* *Drawing Instruments Box:* Scale (Ruler), Compass, Divider, and Protractor.
 
- ### STEP-1:  Start the sketch command
+### 3. Dimensions Overview (Derived from Source)
+* *Total Width (Length):* 100 mm
+* *Total Height:* 50 mm (base body height) + top attachments (e.g., flash/dial features)
+* *Total Depth (Thickness):* 35 mm (main body depth) + lens projection
+* *Main Lens:* Diameter of 50 mm ($\phi 50$), projecting outward by 20 mm
+* *Top Dial:* Diameter of 20 mm ($\phi 20$)
+* *Top Viewfinder / Flash block:* Width of 30 mm, with a 45° angled front section
 
-Objective: To being the sketching process in your CAD software(such as Autodesk Fusion 360).
-Action to perform:
-1.Navigate to the top menu bar or toolbar.
-2.Click on sketch.
-3.From the dropdown option, select create sketch.
+### 4. Step-by-Step Procedure
 
- ### STEP-2:  Select the Sketch Plane
+*Step 1: Preparation of Sheet & Reference Lines*
+1. Fix the drawing sheet securely onto the drawing board using clips or drafting tape.
+2. Draw a suitable border line and create a title block at the bottom right corner.
+3. Based on the arrow marked "FRONT", establish the layout orientation:
+   * *Front View (FV)* will be drawn looking from the direction of the arrow.
+   * *Top View (TV)* will be projected directly below the Front View.
+<img width="955" height="617" alt="image" src="https://github.com/user-attachments/assets/0f0baa96-bcfe-4181-9342-6b97f9964e23" />
+* Side View (SV) (Right Side View) will be projected to the left or right of the Front View depending on First/Third Angle Projection conventions (typically First Angle is standard unless specified otherwise).
 
-Open Autodesk Fusion 360 and choose the TOP(XY)plane to start your initial 2D drawing.
+### Step 2: Drawing the Front View (FV)
+1. Project or measure the overall base width of *100 mm* horizontally and a total height of *50 mm* vertically for the main body.
+2. Draw the main rectangular body outline.
+3. Locate the central cylindrical lens ($\phi 50$) on the front face:
+   * Center it horizontally across the 100 mm width.
+   * Draw the circular lens outline with a diameter of 50 mm.
+4. Add the top attachments visible from the front:
+   * Draw the profile of the central trapezoidal flash/viewfinder block showing the 45° slope feature.
+   * Draw the outlines of the smaller top buttons/dials on the upper surface.
+5. Darken the visible outlines using an HB pencil.
+<img width="956" height="562" alt="image" src="https://github.com/user-attachments/assets/e4dd3664-17f9-4d27-8abf-9c5676aeb761" />
 
-### STEP-3: Create a Rectangle 
+### Step 3: Drawing the Top View (TV)
+1. Project vertical lines downwards from all major features of the Front View to align the width cleanly.
+2. Mark the total depth of the object, which is *35 mm* for the main body plus the 20 mm lens projection (total depth extending to *55 mm*).
+3. Draw the rectangular top profile of the camera body (100 mm width $\times$ 35 mm depth).
+4. Represent the cylindrical lens projecting forward by drawing its circular profile or projection boundaries corresponding to the depth of *20 mm*.
+5. Draw the top square button block and the circular dial ($\phi 20$) positioned on the top surface layout using the given offset dimensions (e.g., 15 mm spacing references).
 
-1.Select the Tool: Go to the top menu and select Sketch > Rectangle > Center Rectangle.  
-2. Locate the Origin: Hover your mouse cursor over the origin point (the central point/0,0 point) of the sketch grid. You should see your cursor automatically snap directly onto this center location.  
-3. Start Drawing: Click once at the center origin point to begin placing and stretching out the rectangle.  
-4. Enter Dimensions: Press the Tab key on your keyboard to switch between the input boxes, and enter 100 mm for the width and 60 mm for the height.  
-5. Confirm Placement: Click your mouse button again to confirm and lock in the dimensions and placement of the rectangle.  
-6. Complete the Sketch: Click on Finish Sketch in the toolbar after completing the drawing to exit the sketch environment
+### Step 4: Drawing the Side View (SV)
+1. Using a 45° miter line from the top-view projection boundaries or direct horizontal projections from the Front View, construct the Side View.
+2. Draw the overall depth box (width/depth of *35 mm) and height (50 mm* base plus top components).
+3. Outline the profile of the camera body from the side, indicating how the lens protrudes forward by *20 mm* and how the top attachments sit on the upper tier.
+<img width="1177" height="645" alt="image" src="https://github.com/user-attachments/assets/524d6930-f4fd-42c9-a2bb-9a340501b60f" />
 
- ### STEP-4: Extrude Rectangle in XZ Plane
-1.Select the Tool: Click on the Extrude tool from the toolbar (or press 'E').  
-2. Choose Profile: Click on the rectangle sketch you created earlier to select it as the profile to extrude.  
-3. Set Distance: Click to activate the input field.  
-4. Enter Thickness/Height: Type in 30mm as the extrusion distance.  
-5. Confirm: Press ENTER to apply the value and turn your 2D rectangle into a 3D rectangular block.
-
- ### STEP-5:  Start the sketch command
-   Action: Go to the menu and select Sketch>Create Sketch to begin a new 2D sketch on your 3D model.
- ### STEP-6: Select the Sketch Plane
-   Action: Instead of selection a default coordinate plane, click directly on the front surface of the newly created rectangular block to use it as your drawing plane.
- ### STEP-7: Create a CIRCLE 
-1.Select the Tool: Go to the top menu and select Sketch > CIRCLE > CENTER CIRCLE.  
-2. Locate the Center: Hover your mouse cursor over the origin (center) point of the sketch until you see the cursor snap to this location.  
-3. Start Drawing: Click once to begin placing the circle.  
-4. Enter Dimension: Press the Tab button and enter the diameter value of 100mm.  
-5. Place the Circle: Click again to lock and place the circle.  
-6. Finish Sketch: Click on Finish Sketch after completing the circle.
-
- ### STEP-8:  Extrude CIRCLE 
-1.Select Extrude: Click on the Extrude tool from the menu.  
-2. Select Profile: Select the newly drawn circle sketch profile.  
-3. Activate Value Field: Click again to place the value.  
-4. Enter Distance: Type in the value of 20mm for the extrusion length.  
-5. Confirm: Press ENTER on your keyboard to accept and apply the value.
-
- ### STEP-9: Start the sketch command
-Action: Go to the main toolbar and select sketch>create sketch to initiate a new 2D sketch workspace.
-   
- ### STEP-10: Select the Sketch Plane
-Action: Click directly on the TOP SURFACE OF RECTANGLE to choose it as the plane for drawing your new sketch.
-   
- ### STEP-11: Create a line
-1.Select Tool: Choose the line command from the sketch toolbar.
-2.Draw Line: Draw the projection lines onto the model surface as specified in the diagram.
-3.Complete Sketch: Click Finish Sketch once the line drawing are complete.
-4.Extrude: Apply the Extrude tool to the newly created line sketch profile to give it 3D depth/height.
-
+### Step 5: Dimensioning and Final Finishing
+1. Dimension all crucial features clearly using thin lines, extension lines, and arrowheads (e.g., overall length 100, height 50, depth 35, lens diameter $\phi 50$, lens projection 20, dial diameter $\phi 20$).
+2. Ensure all hidden details (if any internal cavities exist) are represented using dashed/dotted lines, though most visible features here are external.
+3.clean up any extra construction lines, check dimension accuracy against the reference drawing, and darken the final object lines.
+4.against the reference drawing, and darken the final object the lines. 
 ## INPUT
 ![image](https://user-images.githubusercontent.com/113594316/198495472-9a69edb1-f0c6-470c-b9ae-fe282fa6a678.png)
 
 ## OUTPUT
-<img width="1015" height="718" alt="Screenshot 2026-11-09 122805" src="https://github.com/user-attachments/assets/5bb8dc62-d5c7-4697-a487-ada91f4b2eb7" />
 <img width="1026" height="663" alt="Screenshot 2026-11-09 121705" src="https://github.com/user-attachments/assets/65f3fcc7-4515-4ce0-b415-941717db0bb8" />
-
+<img width="1015" height="718" alt="Screenshot 2026-11-09 122805" src="https://github.com/user-attachments/assets/5bb8dc62-d5c7-4697-a487-ada91f4b2eb7" />
 
 ## RESULT: 
 Thus, the 3D model is created from given isometric drawing. Confirms that all sketching and 3D extrusion steps in Autodesk Fusion 360 were successfully completed to accurately build the required 3D solid model.
+<img width="482" height="401" alt="image" src="https://github.com/user-attachments/assets/2f6890e9-7e57-4347-9e11-b919b981fa43" />
+
